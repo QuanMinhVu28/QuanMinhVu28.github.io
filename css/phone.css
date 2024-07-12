@@ -1,0 +1,56 @@
+section > .container-fluid {
+    padding: 30px;
+    width: 100%;
+}
+
+/* Navigation */
+
+#nav-bar .container-fluid {
+    padding: 30px;
+}
+
+.link-border {
+    border: none;
+}
+
+/* About */
+
+#target,
+#personal-info {
+    width: auto;
+}
+
+/* Job info */
+
+#job-info .container-fluid {
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+.view-more {
+    display: block;
+}
+
+/* Certificates and Awards */
+
+.certificate-list {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "item1"
+        "item2"
+        "item3";
+}
+
+.certificates {
+    align-items: center;
+}
+
+.certificate-1 {
+    border-right: none;
+    border-bottom: 1px solid #d6c08d;
+    padding-right: 0;
+}
+
+.certificate-2 {
+    padding-left: 0;
+}

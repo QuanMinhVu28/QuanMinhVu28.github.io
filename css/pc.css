@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    font-family: "open_sansregular", sans-serif;
+    box-sizing: border-box;
+    line-height: 1.8;
+}
+
+.bg-grey {
+    background: #f7f7f7;
+}
+
+section > .container-fluid {
+    width: 85%;
+    margin: auto;
+    display: block;
+
+    padding: 30px 50px;
+}
+
+p {
+    color: gray;
+}
+
+/* I. Banner */
+
+#banner {
+    background-image: url("../images/banner.jpg");
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: top;
+    color: white;
+    height: 450px;
+    position: relative;
+}
+
+.banner-heading {
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+#banner-title {
+    font-size: 50px;
+}
+
+/* II. Navigation */
+
+nav.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.link {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    padding: 0 20px;
+}
+
+.nav-avatar {
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+    padding: 0 20px;
+    width: 200px;
+    height: 60px;
+    position: relative;
+}
+
+.link-border {
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+}
+
+#avatar {
+    border-radius: 200px;
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid white;
+}
+
+.nav-icon {
+    color: #0077ff;
+}
+
+/* III. Content */
+
+.container-fluid h1 {
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+/* 1. About */
+
+#personal-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about .container-fluid {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+}
+
+#target,
+#personal-info {
+    flex: 1;
+    padding: 60px 40px;
+}
+
+#personal-info {
+    background-color: #f0f0f0;
+}
+
+.personal-info-icons {
+    margin-top: 20px;
+}
+
+.personal-info-icons a {
+    text-decoration: none;
+    color: #0077ff;
+}
+
+/* 2. Job info */
+
+#job-info .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.experience-time {
+    background-color: #0077ff;
+    color: white;
+    border-radius: 7px;
+    padding: 2px 15px;
+}
+
+.container2 > div {
+    flex: 1;
+}
+
+.job-info-sections {
+    border: 1px solid #d4d4d4;
+    padding: 60px 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "title title title icon"
+        "details details details details";
+    row-gap: 30px;
+    grid-template-rows: min-content auto; /* Bỏ khoảng trống thừa trong các grid row thứ nhất */
+    align-items: baseline;
+    height: auto;
+    position: relative;
+}
+
+.job-info-icon {
+    font-size: 50px;
+    color: gray;
+    grid-area: icon;
+}
+
+.job-info-details {
+    grid-area: details;
+}
+
+.job-info-sections h1 {
+    grid-area: title;
+}
+
+.job-info-sections li {
+    color: #0077ff;
+    margin-bottom: 30px;
+}
+
+.job-info-sections ul {
+    padding-left: 20px;
+}
+
+.job-info-sections li:last-child {
+    margin-bottom: 0;
+}
+
+.hobbies {
+    gap: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.hobbies > div {
+    flex: 1;
+}
+
+.hobbies-icon {
+    color: #0077ff;
+    border: 1px solid #0077ff;
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    padding-top: 15px; /* Làm cho icon nằm chính giữa trong border tròn */
+}
+
+.language-and-skills span {
+    background-color: #d4d4d4;
+    height: 2px;
+    width: 45px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.language-and-skills p {
+    color: black;
+}
+
+.language-and-skills .active {
+    background-color: #0077ff;
+}
+
+.view-more {
+    text-transform: uppercase;
+    font-size: 13px;
+    width: 150px;
+    padding: 5px 0;
+    border: none;
+    outline: none;
+    border-radius: 80px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* 3. Certificates and Awards */
+
+.certificate-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "item1 item2"
+        "item3 item3";
+    row-gap: 30px;
+}
+
+.certificates p:first-child {
+    color: black;
+}
+
+.certificates {
+    display: flex;
+    gap: 20px;
+}
+
+.certificates img {
+    height: 100px;
+    width: 200.89445px;
+}
+
+.certificate-1 {
+    border-right: 1px solid #d6c08d; /* Vẽ đường viền giữa 2 item hàng 1 */
+    padding-right: 20px;
+    grid-area: item1;
+}
+
+.certificate-2 {
+    padding-left: 20px;
+    grid-area: item2;
+}
+
+.certificate-3 {
+    padding-top: 30px;
+    border-top: 1px solid #d6c08d; /* Vẽ đường viền giữa hàng 1 và hàng 2 */
+    grid-area: item3;
+}
+
+/* 4. Projects */
+
+.project-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-name-1 {
+    border-top: 1px solid #d4d4d4;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+    color: black;
+    padding: 10px 20px;
+}
+
+.project-name-2 {
+    border-top: 1px solid #d4d4d4;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+    padding: 10px 20px;
+}
+
+.projects {
+    color: gray;
+    max-width: 800px;
+    flex: 1;
+}
+
+.projects img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.project-time {
+    background-color: #0077ff;
+    color: white;
+    border-radius: 20px;
+    padding: 2px 15px;
+    margin-right: 10px;
+}
+
+.funix-dev {
+    column-gap: 10px;
+    flex: 1;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border: 1px solid #d4d4d4;
+}
+
+td {
+    padding: 10px 20px;
+    vertical-align: top;
+}
+
+/* III. Footer */
+
+#footer ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#footer li {
+    margin: 20px;
+    display: inline-block;
+}
+
+#footer a {
+    vertical-align: middle;
+    color: gray;
+    text-decoration: none;
+}
+
+.footer-icon {
+    font-size: 40px;
+    color: #0077ff;
+    vertical-align: middle;
+}
+
+/* IV. Utilities */
+
+.hidden {
+    display: none;
+}
